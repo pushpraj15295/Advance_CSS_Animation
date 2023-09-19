@@ -1,6 +1,6 @@
 import "./App.css";
 import CircleText from "./Pages/Image-design/CircleText";
-import GhostText from "./Pages/Text-design/GhostTexts/ghostText";
+import GhostText from "./Pages/Text-design/ghostTexts/GhostText";
 
 
 function App() {
