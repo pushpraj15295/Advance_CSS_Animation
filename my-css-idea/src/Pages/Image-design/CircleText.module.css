@@ -1,0 +1,36 @@
+.main{
+    background-color: dimgray;
+}
+
+.img1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    float: left;
+    padding: 20px;
+    shape-outside: circle();
+    object-fit: cover;
+}
+.img2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    float:right;
+    padding: 10px;
+    shape-outside:circle();
+    object-fit: cover;
+}
+
+.main h2{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+.main p{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+}
