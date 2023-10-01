@@ -1,0 +1,13 @@
+.sush{
+    text-align: center;
+    font-size: 150px;
+    background-image: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    /* background-size: cover; */
+    background-position: center;
+    background-clip: text;
+    font-weight:800;
+    color: transparent;
+    border:1px solid black;
+    border-radius: 50px;
+    margin: 10px;
+}
