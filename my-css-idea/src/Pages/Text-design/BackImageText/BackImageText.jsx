@@ -4,7 +4,7 @@ import styles from "./BackImageText.module.css"
 const BackImageText = () => {
   return (
     <h1 className={styles.sush}>
-         SHUSHMETHA
+         BackGround Image Text
     </h1>
   )
 }
