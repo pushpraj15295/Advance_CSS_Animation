@@ -5,7 +5,6 @@ import BackImageText from "./Pages/Text-design/BackImageText/BackImageText";
 import BackVideoText from "./Pages/Text-design/BackVideoText/BackVideoText";
 import CyclingGradient from "./Pages/Image-design/CyclingGradient/CyclingGradient";
 
-
 function App() {
   return (
     <div className="App">
@@ -13,7 +12,7 @@ function App() {
       <BackImageText />
       <BackVideoText />
       <CircleText />
-    <CyclingGradient />
+      <CyclingGradient />
     </div>
   );
 }
