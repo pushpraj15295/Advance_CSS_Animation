@@ -1,18 +1,20 @@
 import React from "react";
-import styles from "./GhostText.module.css"
+import styles from "./GhostText.module.css";
 
 const GhostText = () => {
   return (
     <section>
       <h2>
-        <span>G</span>
         <span>H</span>
-        <span>O</span>
-        <span>S</span>
-        <span>T &nbsp;</span>
-        <span>R</span>
+        <span>I</span>
+        <span>M</span>
         <span>A</span>
-        <span>J</span>
+        <span>L</span>
+        <span>A</span>
+        <span>Y</span>
+        <span>A</span>
+        <span>N</span>
+        {/* <span>L &nbsp;</span> */}
       </h2>
     </section>
   );
