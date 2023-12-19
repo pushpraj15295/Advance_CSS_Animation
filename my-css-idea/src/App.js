@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
       <GhostText />
+      <ImageShape />
       <BackImageText />
       <BackVideoText />
       <CircleText />
-      <ImageShape />
       <CyclingGradient />
     </div>
   );
