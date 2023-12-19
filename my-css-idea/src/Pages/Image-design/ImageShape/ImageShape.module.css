@@ -1,0 +1,74 @@
+.main_cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+  gap: 20px;
+}
+/* 1 */
+.first_Image {
+  width: 300px;
+  cursor: pointer;
+  clip-path: polygon(400% 50%, 100% 0%, 50% 90%, 0% 20%);
+  transition: clip-path 0.7s ease;
+}
+
+.first_Image_cont:hover .first_Image {
+  clip-path: polygon(50% 0, 10% 50%, 50% 100%, 0 50%);
+}
+
+/* 2 */
+.secont_Image {
+  width: 400px;
+  clip-path: ellipse(330px 120px at 90% 70%);
+  cursor: pointer;
+  transition: clip-path 0.8s ease;
+}
+.secont_Image_cont:hover .secont_Image {
+  clip-path: ellipse(160px 140px at 20% 50%);
+}
+
+/* 3 */
+.third_Image {
+  width: 300px;
+  clip-path: circle(48%);
+  cursor: pointer;
+  transition: clip-path 0.8s ease;
+}
+.third_Image_cont:hover .third_Image {
+  clip-path: circle(10%);
+}
+
+/* 4 */
+.forth_Image {
+  width: 300px;
+  height: auto;
+  clip-path: path("M 0 600 L 0,65 A 5,5 0,0,1 150,450 L 200 200 z");
+  cursor: pointer;
+  transition: clip-path 0.7s ease;
+}
+.forth_Image_cont:hover .forth_Image {
+  clip-path: path("M 10 350 L 70,75 A 5,0 0,0,1 150,155 L 360 600 z");
+}
+
+/* 5 */
+.fifth_Image {
+  width: 300px;
+  cursor: pointer;
+  clip-path: path("M 45 30 L 10,150 A 50,5 0,0,1 50,390 L 250 800 z");
+  transition: clip-path 0.6s ease;
+}
+.fifth_Image_cont:hover .fifth_Image {
+  clip-path: path("M 0 700 L 50,5 A 45,50 100,1,0 150,70 L 450 100 z");
+}
+
+/* 6 */
+.sixth_Image {
+  width: 300px;
+  clip-path: polygon(0% 0, 100% 100%, 50% 0%, 0% 100%);
+  cursor: pointer;
+  transition: clip-path 0.9s ease;
+}
+.sixth_Image_cont:hover .sixth_Image {
+  clip-path: polygon(200% 100%, 90% 60%, 25% 120%, 10% 05%);
+}
