@@ -2,35 +2,29 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a {
+  text-decoration: none;
+  color: initial;
 }
 
-
-li div {
+li a {
   display: grid;
   height: 280px;
   grid-template-rows:110%;
   align-items: center;
-  font-size: 2rem;
-  line-height: 1.7;
   overflow: hidden;
-  border: 1px solid;
-  padding: 0.8rem;
 }
 
-li div:link .menu-item {
+li a:link .menu-item {
   animation: 3s forwards move-down-initialmenu-noHover;
 }
-li div:link .menu-item-active {
+li a:link .menu-item-active {
   animation: 3s forwards move-down-activemenu-noHover;
 }
-li div:hover > .menu-item {
+li a:hover > .menu-item {
   animation: 3s forwards move-up-initialmenu-onHover;
 }
-li div:hover > .menu-item-active {
+li a:hover > .menu-item-active {
   animation: 3s forwards move-up-activemenu-onHover;
 }
 
