@@ -10,11 +10,11 @@ import ImageShape from "./Pages/Image-design/ImageShape/ImageShape";
 function App() {
   return (
     <div className="App">
-      <GhostText />
+      {/* <GhostText />
       <ImageShape />
       <BackImageText />
-      <BackVideoText />
-      <CircleText />
+      <BackVideoText /> */}
+      {/* <CircleText /> */}
       <CyclingGradient />
     </div>
   );

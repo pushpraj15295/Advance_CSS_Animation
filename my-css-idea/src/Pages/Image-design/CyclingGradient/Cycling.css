@@ -7,12 +7,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-a {
-  text-decoration: none;
-  color: initial;
-}
 
-li a {
+
+li div {
   display: grid;
   height: 280px;
   grid-template-rows:110%;
@@ -24,16 +21,16 @@ li a {
   padding: 0.8rem;
 }
 
-li a:link .menu-item {
+li div:link .menu-item {
   animation: 3s forwards move-down-initialmenu-noHover;
 }
-li a:link .menu-item-active {
+li div:link .menu-item-active {
   animation: 3s forwards move-down-activemenu-noHover;
 }
-li a:hover > .menu-item {
+li div:hover > .menu-item {
   animation: 3s forwards move-up-initialmenu-onHover;
 }
-li a:hover > .menu-item-active {
+li div:hover > .menu-item-active {
   animation: 3s forwards move-up-activemenu-onHover;
 }
 

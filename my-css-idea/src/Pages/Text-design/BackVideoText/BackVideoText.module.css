@@ -6,7 +6,7 @@
 }
 .Contain .sec{
    position: absolute;
-   width: 100%;
+   width: 99%;
    height: 80vh;
    overflow: hidden;
 }
