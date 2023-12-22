@@ -1,0 +1,106 @@
+.cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px;
+}
+
+.mainCont {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont:hover {
+  filter: blur(5px);
+}
+
+/* 1 */
+.mainCont1 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont1:hover {
+  filter: contrast(200%);
+  border-radius: 10px 120px 10px 120px;
+}
+
+/* 2 */
+.mainCont2 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont2:hover {
+  filter: grayscale(80%);
+  border-radius: 100px 5px 5px 5px;
+}
+
+/* 3 */
+.mainCont3 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont3:hover {
+  filter: hue-rotate(90deg);
+  border-radius: 100px 225px 15px 25px;
+}
+
+/* 4 */
+.mainCont4 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont4:hover {
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+  border-radius: 100px 5px 5px 5px;
+}
+
+/* 5 */
+.mainCont5 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont5:hover {
+  border-radius: 14px;
+  filter: sepia(60%);
+  /* filter: invert(75%); */
+  /* filter: opacity(75%); */
+  /* filter: saturate(30%); */
+  /* filter: hue-rotate(90deg); */
+}
+
+/* 6 */
+.mainCont6 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont6:hover {
+  filter: contrast(900%) drop-shadow(16px 16px 20px rgb(0, 255, 4));
+  /* filter: grayscale(100%); */
+}
+
+/* 7 */
+.mainCont7 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont7:hover {
+  filter: brightness(0.4);
+  border-radius: 0px 0px 55px 55px;
+}
+
+/* 8 */
+.mainCont8 {
+  width: 100%;
+  transition: filter 0.7s ease;
+}
+
+.mainCont8:hover {
+  filter: invert(155%);
+}
