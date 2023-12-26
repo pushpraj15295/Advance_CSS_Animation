@@ -7,6 +7,7 @@ import CyclingGradient from "./Pages/Image-design/CyclingGradient/CyclingGradien
 import CircleText from "./Pages/Image-design/CircleText/CircleText";
 import ImageShape from "./Pages/Image-design/ImageShape/ImageShape";
 import FilterImage from "./Pages/Image-design/FilterImage/FilterImage";
+import Loader from "./Pages/Loader/Loader";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <BackVideoText />
       <CircleText />
       <CyclingGradient />
+      <Loader />
     </div>
   );
 }
