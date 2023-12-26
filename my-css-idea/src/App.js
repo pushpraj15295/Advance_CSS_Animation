@@ -12,13 +12,13 @@ import Loader from "./Pages/Loader/Loader";
 function App() {
   return (
     <div className="App">
-      <GhostText />
+      {/* <GhostText />
       <ImageShape />
       <FilterImage />
       <BackImageText />
       <BackVideoText />
       <CircleText />
-      <CyclingGradient />
+      <CyclingGradient /> */}
       <Loader />
     </div>
   );
