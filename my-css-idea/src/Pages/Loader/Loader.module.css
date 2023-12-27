@@ -56,7 +56,6 @@
   animation: right5231 0.9s linear infinite, rotateLoader 2s linear infinite;
 }
 
-
 @keyframes rotateLoader {
   to {
     transform: rotate(360deg);
@@ -136,8 +135,6 @@
   }
 }
 
-
-
 /* 3rd */
 
 .loaderBox {
@@ -151,7 +148,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   border-radius: 50%;
   animation: moveSnake 4s linear infinite, rotateHead 0.5s infinite;
 }
@@ -160,7 +157,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #FF5722;
+  background-color: #ff5722;
   border-radius: 50%;
   animation: moveFood 4s linear infinite;
 }
@@ -169,6 +166,9 @@
   0% {
     left: 0;
   }
+  15% {
+    left: 50px;
+  }
   25% {
     left: 100px;
   }
@@ -176,18 +176,27 @@
     left: 100px;
     top: 100px;
   }
-  75% {
+  65% {
     left: 0;
     top: 100px;
   }
-  100% {
+  80% {
+    left: 0;
+    top: 100px;
+  }
+  90% {
     left: 0;
     top: 0;
+  }
+  100% {
+    left: 10;
+    top: 10;
   }
 }
 
 @keyframes moveFood {
-  0%, 50% {
+  0%,
+  50% {
     left: 75px;
     top: 75px;
   }
@@ -198,7 +207,8 @@
 }
 
 @keyframes rotateHead {
-  0%, 50% {
+  0%,
+  50% {
     transform: rotate(0deg);
   }
   100% {
