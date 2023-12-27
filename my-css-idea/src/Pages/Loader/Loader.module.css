@@ -135,3 +135,73 @@
     transform: rotate(-360deg);
   }
 }
+
+
+
+/* 3rd */
+
+.loaderBox {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.snake {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  animation: moveSnake 4s linear infinite, rotateHead 0.5s infinite;
+}
+
+.food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FF5722;
+  border-radius: 50%;
+  animation: moveFood 4s linear infinite;
+}
+
+@keyframes moveSnake {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 100px;
+  }
+  50% {
+    left: 100px;
+    top: 100px;
+  }
+  75% {
+    left: 0;
+    top: 100px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes moveFood {
+  0%, 50% {
+    left: 75px;
+    top: 75px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes rotateHead {
+  0%, 50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

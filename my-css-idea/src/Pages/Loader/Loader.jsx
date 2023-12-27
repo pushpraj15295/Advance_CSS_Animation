@@ -12,6 +12,11 @@ const Loader = () => {
         </div>
       </div>
 
+      <div className={styles.loaderBox}>
+        <div className={styles.snake}></div>
+        <div className={styles.food}></div>
+      </div>
+
       <div className={styles.loader}>
         <div className={styles.loader2}>
           <div className={styles.loader3}>
