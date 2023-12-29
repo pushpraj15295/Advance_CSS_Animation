@@ -62,3 +62,14 @@ h2 span:nth-child(10n + 8) {
 h2 span:nth-child(10n + 9) {
   transition-delay: 0.8s;
 }
+
+@media only screen and (max-width: 800px) {
+  section {
+    height: 25vh;
+    margin: 5px;
+  }
+  
+  h2 {
+    font-size: 3.5em;
+  }
+}
