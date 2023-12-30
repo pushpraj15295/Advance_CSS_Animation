@@ -6,3 +6,7 @@
   url(../public/graph.png) 4 12,
   auto;
 }
+html, body {
+  cursor: none !important;
+}
+

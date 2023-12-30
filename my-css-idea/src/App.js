@@ -8,6 +8,7 @@ import CircleText from "./Pages/Image-design/CircleText/CircleText";
 import ImageShape from "./Pages/Image-design/ImageShape/ImageShape";
 import FilterImage from "./Pages/Image-design/FilterImage/FilterImage";
 import Loader from "./Pages/Loader/Loader";
+import AnimatedCursor from "./Pages/Cursor/AnimatedCursor";
 
 function App() {
   return (
