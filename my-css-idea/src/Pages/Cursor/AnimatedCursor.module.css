@@ -15,15 +15,15 @@
 @keyframes pulse {
   0% {
     transform: scale(1);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
   }
   50% {
     transform: scale(1.6);
-    clip-path: polygon(100% 0%, 20% 50%, 100% 100%, 10% 50%);
+    /* clip-path: polygon(100% 0%, 20% 50%, 100% 100%, 10% 50%); */
   }
   100% {
     transform: scale(1);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
   }
 }
 
