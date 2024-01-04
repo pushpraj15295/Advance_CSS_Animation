@@ -1,5 +1,7 @@
 .cont {
   margin: 10%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
@@ -11,12 +13,13 @@
   cursor: pointer;
 }
 
-/* .cont:hover .card {
-    animation: rotate 3s alternate infinite;
-  } */
 .card {
   animation: rotate 10s alternate infinite;
 }
+
+/* .cont:hover .card {
+    animation: rotate 3s alternate infinite;
+  } */
 
 .side {
   position: absolute;
@@ -39,14 +42,11 @@
   background-color: #3498db;
 } */
 
-
-
 /* sort hand for x y z  */
 /* transform: skew(30deg, 20deg, 120deg) */
 
 .front {
-  transform:translateZ(150px) scaleX(-1);
-  
+  transform: translateZ(150px) scaleX(-1);
 }
 .back {
   transform: rotateY(180deg) translateZ(150px) scaleX(-1);
@@ -66,7 +66,7 @@
 
 @keyframes rotate {
   0% {
-    transform: rotateY(0deg) ;
+    transform: rotateY(0deg);
   }
   30% {
     transform: rotateY(180deg);
@@ -78,3 +78,4 @@
     transform: rotateY(280deg) rotateX(120deg);
   }
 }
+
