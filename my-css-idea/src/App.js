@@ -16,9 +16,9 @@ function App() {
     <div className="App">
       <GhostText />
       <ImageShape />
-      <FilterImage />
       <Card3D />
       <RotatingCard />
+      <FilterImage />
       <BackImageText />
       <BackVideoText />
       <CircleText />
