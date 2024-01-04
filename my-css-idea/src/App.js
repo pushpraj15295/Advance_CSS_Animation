@@ -8,8 +8,8 @@ import CircleText from "./Pages/Image-design/CircleText/CircleText";
 import ImageShape from "./Pages/Image-design/ImageShape/ImageShape";
 import FilterImage from "./Pages/Image-design/FilterImage/FilterImage";
 import Loader from "./Pages/Loader/Loader";
-import AnimatedCursor from "./Pages/Cursor/AnimatedCursor";
 import Card3D from "./Pages/Image-design/3Dcard/Index";
+import RotatingCard from "./Pages/Image-design/RotatingCard/RotatingCard";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
       <ImageShape />
       <FilterImage />
       <Card3D />
+      <RotatingCard />
       <BackImageText />
       <BackVideoText />
       <CircleText />
