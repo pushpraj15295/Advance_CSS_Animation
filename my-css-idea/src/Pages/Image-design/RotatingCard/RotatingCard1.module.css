@@ -1,7 +1,7 @@
 .cont {
-  margin: 10%;
+  margin: 5% 10% 10% 10%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .card {
@@ -13,13 +13,9 @@
   cursor: pointer;
 }
 
-.card {
-  animation: rotate 10s alternate infinite;
+.cont:hover .card {
+  animation: rotate 30s alternate infinite;
 }
-
-/* .cont:hover .card {
-    animation: rotate 3s alternate infinite;
-  } */
 
 .side {
   position: absolute;
@@ -55,13 +51,12 @@
     transform: rotateY(0deg);
   }
   30% {
-    transform: rotateY(180deg);
+    transform: rotateY(320deg) rotateX(120deg);
   }
   65% {
     transform: rotateY(230deg) rotateX(80deg);
   }
   100% {
-    transform: rotateY(300deg) rotateX(120deg);
+    transform: rotateY(180deg);
   }
 }
-
