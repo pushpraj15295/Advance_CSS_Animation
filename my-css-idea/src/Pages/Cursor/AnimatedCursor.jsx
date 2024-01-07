@@ -17,15 +17,13 @@ const AnimatedCursor = () => {
   }, []);
 
   return (
-    <>
-      <div
-        className={styles.animated_cursor}
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-        }}
-      ></div>
-    </>
+    <div
+      className={styles.animated_cursor}
+      style={{
+        left: `${position.x}px`,
+        top: `${position.y}px`,
+      }}
+    ></div>
   );
 };
 

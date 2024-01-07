@@ -3,7 +3,7 @@ import styles from "./GhostText.module.css";
 
 const GhostText = () => {
   return (
-    <section>
+    <section className={styles.ghost_text}>
       <h2>
         <span>H</span>
         <span>I</span>

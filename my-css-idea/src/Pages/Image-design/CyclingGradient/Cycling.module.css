@@ -1,13 +1,10 @@
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-}
-a {
+
+.container a {
   text-decoration: none;
   color: initial;
 }
 
-li a {
+.container li a {
   display: grid;
   height: 280px;
   grid-template-rows:110%;
@@ -15,20 +12,20 @@ li a {
   overflow: hidden;
 }
 
-li a:link .menu-item {
+.container li a:link .menu_item {
   animation: 3s forwards move-down-initialmenu-noHover;
 }
-li a:link .menu-item-active {
+.container li a:link .menu_item_active {
   animation: 3s forwards move-down-activemenu-noHover;
 }
 li a:hover > .menu-item {
   animation: 3s forwards move-up-initialmenu-onHover;
 }
-li a:hover > .menu-item-active {
+.container li a:hover > .menu_item_active {
   animation: 3s forwards move-up-activemenu-onHover;
 }
 
-.menu-item-active {
+.container .menu_item_active {
   color: red;
 }
 @keyframes move-up-initialmenu-onHover {

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-section {
+.ghost_text {
   position: relative;
   height: 50vh;
   background-color: #111;
