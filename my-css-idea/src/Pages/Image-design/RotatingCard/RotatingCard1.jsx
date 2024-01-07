@@ -18,64 +18,148 @@ const RotatingCardOne = () => {
             className={`${styles.side} ${styles.front}`}
             onClick={() => handleClick("Summer season")}
           >
-            <img
-              src="https://images.unsplash.com/photo-1572246538688-3f326dca3951?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              width="100%"
-              height="100%"
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://cdn.pixabay.com/vimeo/357512275/wireframe-26097.mp4?width=1280&hash=d9015a9c5a81b9acfab99db4d2f08eb6c2a77932"
             />
           </div>
           <div
             className={`${styles.side} ${styles.back}`}
             onClick={() => handleClick("fall season")}
           >
-            <img
-              src="https://images.unsplash.com/photo-1635193728400-98be5b62b3cf?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="1"
-              width="100%"
-              height="100%"
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://cdn.pixabay.com/vimeo/357512275/wireframe-26097.mp4?width=1280&hash=d9015a9c5a81b9acfab99db4d2f08eb6c2a77932"
             />
           </div>
           <div
             className={`${styles.side} ${styles.right}`}
             onClick={() => handleClick("Winter season")}
           >
-            <img
-              src="https://images.unsplash.com/photo-1551582045-6ec9c11d8697?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              width="100%"
-              height="100%"
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://cdn.pixabay.com/vimeo/357512275/wireframe-26097.mp4?width=1280&hash=d9015a9c5a81b9acfab99db4d2f08eb6c2a77932"
             />
           </div>
           <div
             className={`${styles.side} ${styles.left}`}
             onClick={() => handleClick("spring season")}
           >
-            <img
-              src="https://images.unsplash.com/photo-1558172474-9c7c194c7d06?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="1"
-              width="100%"
-              height="100%"
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://cdn.pixabay.com/vimeo/357512275/wireframe-26097.mp4?width=1280&hash=d9015a9c5a81b9acfab99db4d2f08eb6c2a77932"
             />
           </div>
           <div
             className={`${styles.side} ${styles.top}`}
             onClick={() => handleClick("rainy season")}
           >
-            <img
-              src="https://images.unsplash.com/photo-1431440869543-efaf3388c585?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="1"
-              width="100%"
-              height="100%"
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://cdn.pixabay.com/vimeo/357512275/wireframe-26097.mp4?width=1280&hash=d9015a9c5a81b9acfab99db4d2f08eb6c2a77932"
             />
           </div>
           <div
             className={`${styles.side} ${styles.bottom}`}
             onClick={() => handleClick("This is your Land Earth")}
           >
-            <img
-              src="https://images.unsplash.com/photo-1591035043948-35c22d27b133?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="1"
-              width="100%"
-              height="100%"
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://cdn.pixabay.com/vimeo/357512275/wireframe-26097.mp4?width=1280&hash=d9015a9c5a81b9acfab99db4d2f08eb6c2a77932"
+            />
+          </div>
+        </div>
+
+        {/* 2nd */}
+        <div className={styles.card}>
+          <div
+            className={`${styles.side} ${styles.front}`}
+            onClick={() => handleClick("Summer season")}
+          >
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://vod-progressive.akamaized.net/exp=1704656646~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F814%2F22%2F554074594%2F2620983736.mp4~hmac=78aab6f10b0d18a2529cbd1b244b1d0af8f094f24facde5b8ca66677a582a7db/vimeo-prod-skyfire-std-us/01/814/22/554074594/2620983736.mp4?filename=file.mp4"
+            />
+          </div>
+          <div
+            className={`${styles.side} ${styles.back}`}
+            onClick={() => handleClick("fall season")}
+          >
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://vod-progressive.akamaized.net/exp=1704656646~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F814%2F22%2F554074594%2F2620983736.mp4~hmac=78aab6f10b0d18a2529cbd1b244b1d0af8f094f24facde5b8ca66677a582a7db/vimeo-prod-skyfire-std-us/01/814/22/554074594/2620983736.mp4?filename=file.mp4"
+            />
+          </div>
+          <div
+            className={`${styles.side} ${styles.right}`}
+            onClick={() => handleClick("Winter season")}
+          >
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://vod-progressive.akamaized.net/exp=1704656646~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F814%2F22%2F554074594%2F2620983736.mp4~hmac=78aab6f10b0d18a2529cbd1b244b1d0af8f094f24facde5b8ca66677a582a7db/vimeo-prod-skyfire-std-us/01/814/22/554074594/2620983736.mp4?filename=file.mp4"
+            />
+          </div>
+          <div
+            className={`${styles.side} ${styles.left}`}
+            onClick={() => handleClick("spring season")}
+          >
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://vod-progressive.akamaized.net/exp=1704656646~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F814%2F22%2F554074594%2F2620983736.mp4~hmac=78aab6f10b0d18a2529cbd1b244b1d0af8f094f24facde5b8ca66677a582a7db/vimeo-prod-skyfire-std-us/01/814/22/554074594/2620983736.mp4?filename=file.mp4"
+            />
+          </div>
+          <div
+            className={`${styles.side} ${styles.top}`}
+            onClick={() => handleClick("rainy season")}
+          >
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://vod-progressive.akamaized.net/exp=1704656646~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F814%2F22%2F554074594%2F2620983736.mp4~hmac=78aab6f10b0d18a2529cbd1b244b1d0af8f094f24facde5b8ca66677a582a7db/vimeo-prod-skyfire-std-us/01/814/22/554074594/2620983736.mp4?filename=file.mp4"
+            />
+          </div>
+          <div
+            className={`${styles.side} ${styles.bottom}`}
+            onClick={() => handleClick("This is your Land Earth")}
+          >
+            <video
+              width="178%"
+              autoPlay
+              muted
+              loop
+              src="https://vod-progressive.akamaized.net/exp=1704656646~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F814%2F22%2F554074594%2F2620983736.mp4~hmac=78aab6f10b0d18a2529cbd1b244b1d0af8f094f24facde5b8ca66677a582a7db/vimeo-prod-skyfire-std-us/01/814/22/554074594/2620983736.mp4?filename=file.mp4"
             />
           </div>
         </div>
