@@ -6,7 +6,7 @@ import Carpet_Roll from "../../../videos/carpet-roll.mp4"
 const BackgroundImageUnderContent = () => {
   return (
     <section id={styles.hero}>
-		<div class={styles.container}>
+		<div class={styles.background_image_container}>
 		{/* Air  */}
 		<video loop autoPlay src={Carpet_Roll}></video>
 

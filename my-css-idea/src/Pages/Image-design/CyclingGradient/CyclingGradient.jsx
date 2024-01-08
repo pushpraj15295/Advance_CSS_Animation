@@ -4,7 +4,7 @@ import styles from "./Cycling.module.css";
 const CyclingGradient = () => {
   return (
     <>
-      <div class={styles.container}>
+      <div class={styles.cycling_gradient_container}>
         <ul>
           <li>
             <a href="#">

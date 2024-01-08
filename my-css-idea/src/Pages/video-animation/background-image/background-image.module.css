@@ -1,76 +1,74 @@
 #hero {
-    height: 60vh;
-    color: white;
-    position: relative;
-
+  height: 60vh;
+  color: white;
+  position: relative;
 }
 
-
 img {
-    display: block;
+  display: block;
 }
 
 #hero {
-    height: 75vh;
-    color: white;
-    position: relative;
+  height: 75vh;
+  color: white;
+  position: relative;
 }
 
 #hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(93, 108, 151, 0.8);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(93, 108, 151, 0.8);
+  z-index: -1;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    padding: 4rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+.background_image_container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.container video{
-    position: absolute;
-    top: 0;
-    left: 0;
+.background_image_container video {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: -2;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.background_image_container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 3rem;
+.background_image_container nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 3rem;
 }
 
-nav ul a {
-    text-decoration: none;
-    color: white;
+.background_image_container nav ul a {
+  text-decoration: none;
+  color: white;
 }
 
-h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    max-width: 80%;
-    line-height: 1.2;
+.background_image_container h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  max-width: 80%;
+  line-height: 1.2;
 }
 
-h1 span {
-    color: #FFBF1A;
+.background_image_container h1 span {
+  color: #ffbf1a;
 }
