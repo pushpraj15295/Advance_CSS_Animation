@@ -20,7 +20,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(15, 21, 37, .8);
+    background: rgba(93, 108, 151, 0.8);
     z-index: -1;
 }
 
