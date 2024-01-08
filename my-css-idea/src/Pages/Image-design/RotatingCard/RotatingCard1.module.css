@@ -6,8 +6,8 @@
 
 .card {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   transform-style: preserve-3d;
   transform-origin: center;
   cursor: pointer;
@@ -23,6 +23,12 @@
   height: 100%;
   overflow: hidden;
   border-radius: 5px;
+}
+
+.side video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* sort hand for x y z  */
