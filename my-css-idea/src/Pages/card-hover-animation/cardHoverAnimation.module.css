@@ -77,7 +77,13 @@ figure {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
+.main_image{
+    transform: scale(1.2);
+    transition: transform 400ms ease-in-out;
+}
+
 
 figcaption {
     position: absolute;
@@ -128,6 +134,9 @@ figure footer {
 
 figure:hover figcaption {
     background: linear-gradient(180deg, rgba(21, 22, 24, 0.24) 0%, #151618 100%);
+}
+figure:hover .main_image{
+    transform: scale(1);
 }
 
 figure:hover .arrow{

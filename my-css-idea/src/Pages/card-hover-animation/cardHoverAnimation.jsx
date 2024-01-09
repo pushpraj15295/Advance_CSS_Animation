@@ -3,9 +3,6 @@ import styles from "./cardHoverAnimation.module.css"
 import Gallery1 from "../../images/gallery-1.jpg"
 import Gallery2 from "../../images/gallery-2.jpg"
 import Gallery3 from "../../images/gallery-3.jpg"
-import Gallery4 from "../../images/gallery-4.jpg"
-import Gallery5 from "../../images/gallery-5.jpg"
-import Gallery6 from "../../images/gallery-6.jpg"
 import Arrow from "../../icons/icon-arrow-right-color.svg"
 
 const CardHoverAnimation = () => {
@@ -14,7 +11,7 @@ const CardHoverAnimation = () => {
       <ul class={styles.gallery}>
 			<li>
 				<figure>
-					<a href="#"><img src={Gallery1} alt="Great Barrier Reef, Australia"/></a>
+					<a href="#"><img className={styles.main_image} src={Gallery1} alt="Great Barrier Reef, Australia"/></a>
 					<figcaption>
 						<main>
 							<p class={styles.small}>9-day trip</p>
@@ -35,7 +32,7 @@ const CardHoverAnimation = () => {
 			</li>
 			<li>
 				<figure>
-					<a href="#"><img src={Gallery2} alt="Gallery image"/></a>
+					<a href="#"><img className={styles.main_image} src={Gallery2} alt="Gallery image"/></a>
 					<figcaption>
 						<main>
 							<p class={styles.small}>7-day trip</p>
@@ -44,7 +41,7 @@ const CardHoverAnimation = () => {
 						</main>
 
 						<footer>
-							<div>
+							<div className={styles.priceContainer}>
 								<p class={styles.small}>From</p>
 								<p class={styles.price}>€1,200</p>
 							</div>
@@ -56,7 +53,7 @@ const CardHoverAnimation = () => {
 			</li>
 			<li>
 				<figure>
-					<a href="#"><img src={Gallery3} alt="Gallery image"/></a>
+					<a href="#"><img src={Gallery3} className={styles.main_image} alt="Gallery image"/></a>
 					<figcaption>
 						<main>
 							<p class={styles.small}>10-day trip</p>
@@ -65,7 +62,7 @@ const CardHoverAnimation = () => {
 						</main>
 
 						<footer>
-							<div>
+							<div className={styles.priceContainer}>
 								<p class={styles.small}>From</p>
 								<p class={styles.price}>€2,200</p>
 							</div>
