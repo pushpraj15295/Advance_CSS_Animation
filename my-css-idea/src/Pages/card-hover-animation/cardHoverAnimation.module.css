@@ -1,0 +1,143 @@
+:root {
+    --def-transition-duration: .3s;
+}
+.card_hover{
+    padding: 1rem;
+}
+
+h2,
+h3,
+.price {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+h2 {
+    color: #151618;
+    font-size: 3.0625rem;
+    font-weight: 700;
+    line-height: 120%; 
+    margin: 2rem 0;
+}
+
+h3 {
+    font-size: 2.1875rem;
+    font-weight: 400;
+    line-height: 120%; 
+}
+
+.price {
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 120%; /* 1.875rem */
+    font-size: 1.5625rem;
+}
+
+p.small {
+    color: #E54949;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+figure,
+figure p.small {
+    color: #fff;
+}
+
+figure h3 + p {
+    font-size: 0.8125rem;
+}
+
+figure footer p.small {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+.gallery {
+    display: grid;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(19.6rem, 1fr));
+    grid-auto-rows: 28rem;
+    grid-auto-flow: dense;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    padding: 4rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+figcaption main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    transition: opacity, transform 400ms ease-in-out;
+    transform: translateY(-8rem);
+
+}
+
+figure p {
+    margin: 0;
+}
+
+figure footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 400ms ease-in-out;
+}
+.card_hover .priceContainer{
+    transform: translateY(5rem);
+    transition: transform 250ms ease-in-out;
+}
+
+figure footer img {
+    width: auto;
+    transform: rotate(180deg);
+    transition: transform 0.6s ease-in-out;
+}
+
+figure main,
+figure footer {
+    opacity: 0;
+}
+
+figure:hover figcaption {
+    background: linear-gradient(180deg, rgba(21, 22, 24, 0.24) 0%, #151618 100%);
+}
+
+figure:hover .arrow{
+    transform: rotate(0deg);
+}
+figure:hover .priceContainer{
+    transform: translateY(0);
+}
+figure:hover main,
+figure:hover footer {
+    opacity: 1;
+    transform: translateY(0);
+}
