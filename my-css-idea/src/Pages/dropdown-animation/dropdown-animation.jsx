@@ -4,6 +4,7 @@ import Logo from "../../images/logo-l5.svg"
 const DropdownAnimation = () => {
   return (
     <div id={styles.dropdown_main_container}>
+		
 		<header>
 			<a href="/"><img src={Logo} alt="Logo"/></a>
 

@@ -14,7 +14,7 @@ img {
 
 #dropdown_main_container {
     background-color: #151618;
-    height: 50vh;
+    height: 65vh;
     padding-top: 3rem;
 }
 
@@ -62,11 +62,7 @@ img {
     height: 25px;
 }
 
-#dropdown_main_container .has_submenu:hover ul {
-    display: block;
-    transform: translateX(4rem);
-    border: 1px solid red;
-}
+
 
 #dropdown_main_container .has_submenu ul {
     position: absolute;
@@ -77,7 +73,14 @@ img {
     padding: .5rem;
     display: none;
     transform: translateX(-4rem);
-    transition: transform 1s ease-in-out;
+    transition: all 0.4s ease-in-out, ;
+    display: block;
+    opacity: 0;
+}
+#dropdown_main_container .has_submenu:hover ul {
+    display: block;
+    transform: translateX(4rem);
+    opacity: 1;
 }
 
 #dropdown_main_container .has_submenu ul a {
@@ -87,12 +90,19 @@ img {
     padding: 1rem;
     min-width: 15rem;
     border-radius: .5rem;
+   transition: background-color, padding 250ms ease-in-out;
 }
 
 #dropdown_main_container .has_submenu ul a::after {
     content: url(../../icons/icon-arrow-right.svg);
     height: 17px;
     opacity: 0;
+    transform: rotate(180deg);
+    transition: transform 200ms ease-in-out, opacity 300ms ease-in-out;
+}
+#dropdown_main_container .has_submenu ul a:hover::after {
+    opacity: 1;
+    transform: rotate(0deg);
 }
 
 #dropdown_main_container .has_submenu ul a:hover {
@@ -100,9 +110,7 @@ img {
     padding: 1rem 1.5rem;
 }
 
-#dropdown_main_container .has_submenu ul a:hover::after {
-    opacity: 1;
-}
+
 
 #dropdown_main_container .has_submenu:hover::after {
     opacity: 1;
@@ -120,4 +128,10 @@ img {
     border-radius: 10rem;
     padding: .75rem 1.5rem;
     cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+}
+
+#dropdown_main_container button:hover{
+    background-color: #9E70EB;
+    color: #fff;
 }

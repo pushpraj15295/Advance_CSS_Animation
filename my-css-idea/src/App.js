@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="App">
       <DropdownAnimation/>
-      <BackgroundImageUnderContent />
       <GhostText />
       <ImageShape />
       <Card3D />
