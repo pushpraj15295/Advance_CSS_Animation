@@ -17,10 +17,10 @@ import CardHoverAnimation from "./Pages/card-hover-animation/cardHoverAnimation"
 function App() {
   return (
     <div className="App">
-      <CardHoverAnimation/>
       <DropdownAnimation/>
       <GhostText />
       <ImageShape />
+      <CardHoverAnimation/>
       <Card3D />
       <RotatingCard />
       <RotatingCardOne />
