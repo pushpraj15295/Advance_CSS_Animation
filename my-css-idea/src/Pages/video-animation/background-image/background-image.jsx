@@ -2,13 +2,13 @@ import React from 'react'
 import styles from "./background-image.module.css"
 import Logo from "../../../images/logo-1.svg"
 import Mouse from "../../../images/mouse.svg"
-import Carpet_Roll from "../../../videos/carpet-roll.mp4"
+import Carpet_Roll from "../../../videos/trafic.mp4"
 const BackgroundImageUnderContent = () => {
   return (
     <section id={styles.hero}>
 		<div class={styles.background_image_container}>
 		{/* Air  */}
-		<video loop autoPlay src={Carpet_Roll}></video>
+		<video autoFocus autoPlay loop  src={Carpet_Roll}></video>
 
 			<header>
 				<a href="/"><img src={Logo} alt="Logo" /></a>
