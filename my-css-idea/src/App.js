@@ -10,7 +10,6 @@ import FilterImage from "./Pages/Image-design/FilterImage/FilterImage";
 import Loader from "./Pages/Loader/Loader";
 import Card3D from "./Pages/Image-design/3Dcard/Index";
 import RotatingCard from "./Pages/Image-design/RotatingCard/RotatingCard";
-import BackgroundImageUnderContent from "./Pages/video-animation/background-image/background-image";
 import RotatingCardOne from "./Pages/Image-design/RotatingCard/RotatingCard1";
 import DropdownAnimation from "./Pages/dropdown-animation/dropdown-animation";
 import CardHoverAnimation from "./Pages/card-hover-animation/cardHoverAnimation";

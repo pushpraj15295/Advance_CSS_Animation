@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Loader.module.css";
+import Watch from "../Watch/Watch";
 
 const Loader = () => {
   return (
@@ -12,10 +13,7 @@ const Loader = () => {
         </div>
       </div>
 
-      <div className={styles.loaderBox}>
-        <div className={styles.snake}></div>
-        <div className={styles.food}></div>
-      </div>
+       <Watch />
 
       <div className={styles.loader}>
         <div className={styles.loader2}>
