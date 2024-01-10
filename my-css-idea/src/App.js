@@ -13,14 +13,15 @@ import RotatingCard from "./Pages/Image-design/RotatingCard/RotatingCard";
 import RotatingCardOne from "./Pages/Image-design/RotatingCard/RotatingCard1";
 import DropdownAnimation from "./Pages/dropdown-animation/dropdown-animation";
 import CardHoverAnimation from "./Pages/card-hover-animation/cardHoverAnimation";
+import DragAndDrop from "./Pages/DragAndDrop/DragAndDrop";
 
 function App() {
   return (
     <div className="App">
-      <DropdownAnimation/>
+      <DropdownAnimation />
       <GhostText />
       <ImageShape />
-      <CardHoverAnimation/>
+      <CardHoverAnimation />
       <Card3D />
       <RotatingCard />
       <RotatingCardOne />
@@ -30,6 +31,7 @@ function App() {
       <CircleText />
       <CyclingGradient />
       <Loader />
+      <DragAndDrop />
     </div>
   );
 }
