@@ -1,17 +1,28 @@
 .draggable {
-  background-image: url("https://avatars.githubusercontent.com/u/101568029?s=400&u=e598ac162fc7a1bfc379944406a21ccc061aefe6&v=4");
+  width: 100px;
+  height: 100px;
+  display: flex;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   background-size: cover;
+  background-color: #3498db;
+  transition: left 0.3s ease, top 0.3s ease;
+  background-image: url("https://avatars.githubusercontent.com/u/101568029?s=400&u=e598ac162fc7a1bfc379944406a21ccc061aefe6&v=4");
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  transition: left 0.3s ease, top 0.3s ease;
 }
 
-#rishi {
-  background-image: url("https://avatars.githubusercontent.com/u/97423069?v=4");
-  background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  transition: left 0.3s ease, top 0.3s ease;
+.droppable {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  position: relative;
+  background-size: contain;
+  border: 2px dashed #ccc;
+  background-image: url("https://plus.unsplash.com/premium_photo-1701091956254-8f24ea99a53b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }

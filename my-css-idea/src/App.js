@@ -18,6 +18,7 @@ import DragAndDrop from "./Pages/DragAndDrop/DragAndDrop";
 function App() {
   return (
     <div className="App">
+      <DragAndDrop />
       <DropdownAnimation />
       <GhostText />
       <ImageShape />
@@ -31,7 +32,6 @@ function App() {
       <CircleText />
       <CyclingGradient />
       <Loader />
-      <DragAndDrop />
     </div>
   );
 }
