@@ -72,7 +72,7 @@ const CardHoverAnimation = () => {
 					</figcaption>
 				</figure>
 			</li>
-			<li>
+			{/* <li>
 				<figure>
 					<a href="#"><img className={styles.main_image} src={Gallery1} alt="Great Barrier Reef, Australia"/></a>
 					<figcaption>
@@ -92,7 +92,7 @@ const CardHoverAnimation = () => {
 						</footer>
 					</figcaption>
 				</figure>
-			</li>
+			</li> */}
 		</ul>
     </div>
   )
