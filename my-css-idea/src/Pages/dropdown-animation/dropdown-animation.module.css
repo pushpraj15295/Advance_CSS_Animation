@@ -14,8 +14,11 @@ img {
 
 #dropdown_main_container {
     background-color: #151618;
-    height: 65vh;
-    padding-top: 3rem;
+    height: 12vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  
 }
 
 #dropdown_main_container header {
@@ -76,11 +79,14 @@ img {
     transition: all 0.4s ease-in-out, ;
     display: block;
     opacity: 0;
+    z-index: 1;
+    visibility: hidden;
 }
 #dropdown_main_container .has_submenu:hover ul {
     display: block;
     transform: translateX(4rem);
     opacity: 1;
+    visibility: visible;
 }
 
 #dropdown_main_container .has_submenu ul a {

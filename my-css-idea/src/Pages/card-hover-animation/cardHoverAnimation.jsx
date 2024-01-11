@@ -72,6 +72,27 @@ const CardHoverAnimation = () => {
 					</figcaption>
 				</figure>
 			</li>
+			<li>
+				<figure>
+					<a href="#"><img className={styles.main_image} src={Gallery1} alt="Great Barrier Reef, Australia"/></a>
+					<figcaption>
+						<main>
+							<p class={styles.small}>9-day trip</p>
+							<h3>Great Barrier Reef, <em>Australia</em></h3>
+							<p>Dive into the vibrant underwater world of the Great Barrier Reef, a UNESCO World Heritage Site teeming with marine life.</p>
+						</main>
+
+						<footer>
+							<div className={styles.priceContainer}>
+								<p class={styles.small}>From</p>
+								<p class={styles.price}>€2,500</p>
+							</div>
+
+							<img className={styles.arrow} src={Arrow} alt="Icon"/>
+						</footer>
+					</figcaption>
+				</figure>
+			</li>
 		</ul>
     </div>
   )

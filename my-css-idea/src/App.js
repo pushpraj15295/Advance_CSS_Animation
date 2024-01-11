@@ -18,8 +18,8 @@ import DragAndDrop from "./Pages/DragAndDrop/DragAndDrop";
 function App() {
   return (
     <div className="App">
-      <DragAndDrop />
       <DropdownAnimation />
+      <DragAndDrop />
       <GhostText />
       <ImageShape />
       <CardHoverAnimation />
