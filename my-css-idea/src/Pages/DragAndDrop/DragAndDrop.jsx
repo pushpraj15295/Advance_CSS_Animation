@@ -1,10 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./DragAndDrop.css";
 
 const DragAndDrop = () => {
+  const draggableRef = useRef(null);
+  const yourDivRef = useRef(null);
+  const [heightFromTop, setHeightFromTop] = useState(0);
+
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [offset, setOffset] = useState({ x: 0, y: 0 });
-  const draggableRef = useRef(null);
 
   const dragStart = (event) => {
     event.dataTransfer.setData("text/plain", "");
@@ -15,7 +18,6 @@ const DragAndDrop = () => {
     const offsetY = event.clientY - rect.top;
 
     setOffset({ x: offsetX, y: offsetY });
-    console.log(offsetY - 36, "offset");
   };
 
   const dragOver = (event) => {
@@ -26,14 +28,19 @@ const DragAndDrop = () => {
     event.preventDefault();
 
     const x = event.clientX - offset.x;
-    const y = event.clientY - offset.y;
+    let y = event.clientY - offset.y;
+    y = y - heightFromTop;
 
-    //new position set
     setPosition({ x, y });
   };
 
+  useEffect(() => {
+    const divRect = yourDivRef?.current?.getBoundingClientRect();
+    setHeightFromTop(divRect.top);
+  }, []);
+
   return (
-    <div>
+    <div ref={yourDivRef}>
       <div className="droppable" onDrop={drop} onDragOver={dragOver}>
         <div
           ref={draggableRef}
