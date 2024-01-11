@@ -15,7 +15,7 @@ const DragAndDrop = () => {
     const offsetY = event.clientY - rect.top;
 
     setOffset({ x: offsetX, y: offsetY });
-    console.log(offsetY - 36, "offset")
+    console.log(offsetY - 36, "offset");
   };
 
   const dragOver = (event) => {
@@ -26,8 +26,7 @@ const DragAndDrop = () => {
     event.preventDefault();
 
     const x = event.clientX - offset.x;
-    let y = event.clientY - offset.y;
-    y = y-129
+    const y = event.clientY - offset.y;
 
     //new position set
     setPosition({ x, y });
@@ -35,11 +34,7 @@ const DragAndDrop = () => {
 
   return (
     <div>
-      <div
-        className="droppable"
-        onDrop={drop}
-        onDragOver={dragOver}
-      >
+      <div className="droppable" onDrop={drop} onDragOver={dragOver}>
         <div
           ref={draggableRef}
           className="draggable"
