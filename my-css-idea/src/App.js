@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <DropdownAnimation />
       <DragAndDrop />
-      {/* <GhostText />
+      <GhostText />
       <ImageShape />
       <CardHoverAnimation />
       <Card3D />
@@ -31,7 +31,7 @@ function App() {
       <BackVideoText />
       <CircleText />
       <CyclingGradient />
-      <Loader /> */}
+      <Loader />
     </div>
   );
 }
