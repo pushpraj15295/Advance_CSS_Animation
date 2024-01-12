@@ -14,12 +14,14 @@ import RotatingCardOne from "./Pages/Image-design/RotatingCard/RotatingCard1";
 import DropdownAnimation from "./Pages/dropdown-animation/dropdown-animation";
 import CardHoverAnimation from "./Pages/card-hover-animation/cardHoverAnimation";
 import DragAndDrop from "./Pages/DragAndDrop/DragAndDrop";
+import { MultiDragAndDrop } from "./Pages/MultiDragAndDrop/MultiDragAndDrop";
 
 function App() {
   return (
     <div className="App">
       <DropdownAnimation />
       <DragAndDrop />
+      <MultiDragAndDrop />
       <GhostText />
       <ImageShape />
       <CardHoverAnimation />

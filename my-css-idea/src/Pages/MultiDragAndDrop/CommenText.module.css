@@ -1,0 +1,37 @@
+.draggableOne {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-color: hsl(204, 16%, 61%);
+  transition: left 0.3s ease, top 0.3s ease;
+  background-image: url("https://avatars.githubusercontent.com/u/101568029?s=400&u=e598ac162fc7a1bfc379944406a21ccc061aefe6&v=4");
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.draggableTwo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-color: #3498db;
+  transition: left 0.3s ease, top 0.3s ease;
+  background-image: url("https://avatars.githubusercontent.com/u/97423069?v=4");
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
