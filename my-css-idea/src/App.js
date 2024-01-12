@@ -15,6 +15,7 @@ import DropdownAnimation from "./Pages/dropdown-animation/dropdown-animation";
 import CardHoverAnimation from "./Pages/card-hover-animation/cardHoverAnimation";
 import DragAndDrop from "./Pages/DragAndDrop/DragAndDrop";
 import { MultiDragAndDrop } from "./Pages/MultiDragAndDrop/MultiDragAndDrop";
+import { CrossBoxDragAndDrop } from "./Pages/CroseBoxDragAndDrop/CroseBoxDragAndDrop";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <DropdownAnimation />
       <DragAndDrop />
       <MultiDragAndDrop />
+      <CrossBoxDragAndDrop />
       <GhostText />
       <ImageShape />
       <CardHoverAnimation />
