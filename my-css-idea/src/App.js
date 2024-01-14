@@ -21,7 +21,7 @@ import SvgAnimation from "./Pages/svgAnimation/svgAnimation";
 function App() {
   return (
     <div className="App">
-      {/* <SvgAnimation /> */}
+      <SvgAnimation />
       <DropdownAnimation />
       <DragAndDrop />
       <MultiDragAndDrop />

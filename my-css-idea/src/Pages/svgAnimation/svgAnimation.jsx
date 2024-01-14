@@ -1,13 +1,16 @@
 import React from "react";
-
+import styles from "./svgAnimation.module.css"
 const SvgAnimation = () => {
   return (
-    <div>
-<svg width="100" height="700" xmlns="http://www.w3.org/2000/svg">
-<path d="M 10 10 A 30 50 45 0 0 900 100" stroke="red" />
-
-</svg>
-
+    <div className={styles.svg_container}>
+      <svg viewBox="0 0 400 160">
+        <text x= "50%" y="50%" dy=".32em" textAnchor="middle" className={styles.text_body}>
+            Welcome
+        </text>
+        <text x= "50%" y="50%" dy=".32em" dx="2em" textAnchor="middle" className={styles.text_body}>
+            .
+        </text>
+      </svg>
     </div>
   );
 };

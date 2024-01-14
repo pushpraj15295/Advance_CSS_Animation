@@ -1,0 +1,46 @@
+:root{
+    --loader-text-color : #5561e5;
+    --loader-text-red : #de3e1f;
+    --loader-text-green : #358060;
+    --background-color : #222e35
+}
+
+
+
+svg{
+width:100%;
+height: 100%;
+}
+svg text{
+font-size: 3.5rem;
+stroke-width: 2;
+font-weight: 700;
+letter-spacing: -6px;
+
+}
+svg text.text_body{
+    stroke : var(--loader-text-color);
+    animation: 4s infinite alternate animate-stroke;
+}
+@keyframes animate-stroke {
+    0%{
+        fill : transparent;
+        stroke:  var(--loader-text-color);
+        stroke-width: 3;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 32%;
+    }
+    50%{
+        fill: transparent;
+        stroke: var(--loader-text-color);
+        stroke-width: 3;
+
+    }
+    80%{
+        fill: var(--loader-text-color);
+        stroke: transparent;
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 32% 0;
+    }
+}
