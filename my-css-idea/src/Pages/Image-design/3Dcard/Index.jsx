@@ -3,8 +3,7 @@
 import React from "react";
 import styles from "./Index.module.css";
 import catImg from "../../../images/cat.avif";
-const imageUrl =
-  "https://images.unsplash.com/photo-1704194760975-6b80271ebf98?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
 const title = "Wellcome Card";
 const description = "3d Card design";
 

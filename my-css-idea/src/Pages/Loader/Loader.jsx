@@ -13,7 +13,7 @@ const Loader = () => {
         </div>
       </div>
 
-       <Watch />
+      <Watch />
 
       <div className={styles.loader}>
         <div className={styles.loader2}>

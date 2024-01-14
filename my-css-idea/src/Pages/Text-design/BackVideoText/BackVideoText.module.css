@@ -1,49 +1,46 @@
-
-.Contain{
-    width: 100%;
-    height: 90vh;
-    position: relative;
+.Contain {
+  width: 100%;
+  height: 90vh;
+  position: relative;
 }
-.Contain .sec{
-   position: absolute;
-   width: 99%;
-   height: 80vh;
-   overflow: hidden;
-}
-
-.Contain .sec h2{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    text-transform: uppercase;
-    font-size: 12vw;
-    text-align: center;
-    font-weight: 800;
-    line-height: .95em;
-
-    color:#fff;
-    background:rgba(0, 0, 0, 0.95);
-    mix-blend-mode: multiply;
-    
+.Contain .sec {
+  position: absolute;
+  width: 99%;
+  height: 80vh;
+  overflow: hidden;
 }
 
-.Contain .sec h2 span{
-    font-size: 10vw;
-    line-height: .95em;
+.Contain .sec h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  text-transform: uppercase;
+  font-size: 12vw;
+  text-align: center;
+  font-weight: 800;
+  line-height: 0.95em;
+
+  color: #fff;
+  background: rgba(0, 0, 0, 0.95);
+  mix-blend-mode: multiply;
 }
 
-.Contain .sec video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.Contain .sec h2 span {
+  font-size: 10vw;
+  line-height: 0.95em;
 }
 
+.Contain .sec video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
