@@ -1,23 +1,20 @@
-.App {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  cursor:
-  url(../public/graph.png) 4 12,
-  auto;
-}
-html, body {
-  cursor: none !important;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(../public/graph.png) 4 12, auto;
+}
+html,
+body {
+  cursor: none !important;
+}
 html {
   font-size: 16px;
-  font-family: 'Figtree', sans-serif;
+  font-family: "Figtree", sans-serif;
   line-height: 1.5;
 }
-

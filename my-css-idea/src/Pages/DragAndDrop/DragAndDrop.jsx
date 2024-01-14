@@ -12,7 +12,6 @@ const DragAndDrop = () => {
   const dragStart = (event) => {
     event.dataTransfer.setData("text/plain", "");
 
-    // position of drag element
     const rect = draggableRef.current.getBoundingClientRect();
     const offsetX = event.clientX - rect.left;
     const offsetY = event.clientY - rect.top;

@@ -81,7 +81,7 @@
   transform-style: preserve-3d;
 }
 
-.cardContainer:hover .card2  {
+.cardContainer:hover .card2 {
   transform: rotateX(-170deg) rotateY(140deg);
 }
 .cardTitle2 {

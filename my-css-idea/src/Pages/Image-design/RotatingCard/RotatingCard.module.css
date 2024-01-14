@@ -1,7 +1,7 @@
 .cont {
   margin: 10%;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .card {
@@ -64,4 +64,3 @@
     transform: rotateY(300deg) rotateX(120deg);
   }
 }
-

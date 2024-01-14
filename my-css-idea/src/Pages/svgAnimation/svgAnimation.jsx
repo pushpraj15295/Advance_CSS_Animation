@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const SvgAnimation = () => {
-  return (
-    <div>SvgAnimation</div>
-  )
-}
+  return <div>SvgAnimation</div>;
+};
 
-export default SvgAnimation
+export default SvgAnimation;
