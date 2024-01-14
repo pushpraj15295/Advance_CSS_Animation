@@ -16,10 +16,12 @@ import CardHoverAnimation from "./Pages/card-hover-animation/cardHoverAnimation"
 import DragAndDrop from "./Pages/DragAndDrop/DragAndDrop";
 import { MultiDragAndDrop } from "./Pages/MultiDragAndDrop/MultiDragAndDrop";
 import { CrossBoxDragAndDrop } from "./Pages/CroseBoxDragAndDrop/CroseBoxDragAndDrop";
+import SvgAnimation from "./Pages/svgAnimation/svgAnimation";
 
 function App() {
   return (
     <div className="App">
+      {/* <SvgAnimation /> */}
       <DropdownAnimation />
       <DragAndDrop />
       <MultiDragAndDrop />
