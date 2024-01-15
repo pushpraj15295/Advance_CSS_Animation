@@ -5,20 +5,23 @@ import Watch from "../Watch/Watch";
 const Loader = () => {
   return (
     <div className={styles.cont}>
-      <div className={styles.load}>
-        <div className={styles.load2}>
-          <div className={styles.load3}>
-            <div className={styles.load4}></div>
-          </div>
-        </div>
+      <div className={styles.arc_loader}></div>
+      <div className={styles.circle_dot_loader}>
+        <div></div>
+        <div></div>
+      </div>
+      <div className={styles.bubble_loader}>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
 
       <Watch />
 
-      <div className={styles.loader}>
-        <div className={styles.loader2}>
-          <div className={styles.loader3}>
-            <div className={styles.loader4}></div>
+      <div className={styles.load}>
+        <div className={styles.load2}>
+          <div className={styles.load3}>
+            <div className={styles.load4}></div>
           </div>
         </div>
       </div>

@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./dropdown-animation.module.css";
 import Logo from "../../images/logo-l5.svg";
+import SvgAnimation from "../svgAnimation/svgAnimation"
 const DropdownAnimation = () => {
   return (
     <div id={styles.dropdown_main_container}>
       <header>
         <a href="/">
-          <img src={Logo} alt="Logo" />
+          <SvgAnimation />
         </a>
 
         <nav>

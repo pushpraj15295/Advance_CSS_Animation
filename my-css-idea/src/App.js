@@ -22,7 +22,7 @@ import ResponsiveImageGallery from "./Pages/ResponsiveImageGallery/ResponsiveIma
 function App() {
   return (
     <div className="App">
-      {/* <SvgAnimation /> */}
+      <SvgAnimation />
       <DropdownAnimation />
       <DragAndDrop />
       <MultiDragAndDrop />
