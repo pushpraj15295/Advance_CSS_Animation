@@ -34,11 +34,11 @@ function App() {
       <RotatingCard />
       <RotatingCardOne />
       <FilterImage />
-      <ResponsiveImageGallery />
       <BackImageText />
       <BackVideoText />
       <CircleText />
       <CyclingGradient />
+      <ResponsiveImageGallery />
       <Loader />
     </div>
   );
