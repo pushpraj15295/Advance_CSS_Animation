@@ -7,7 +7,7 @@ const SvgAnimation = () => {
         <text x= "50%" y="50%" dy=".32em" textAnchor="middle" className={styles.text_body}>
             Welcome
         </text>
-        <text x= "50%" y="50%" dy=".32em" dx="2em" textAnchor="middle" className={styles.text_body}>
+        <text x= "50%" y="50%" dy=".32em" dx="2.1em" textAnchor="middle" className={styles.text_body}>
             .
         </text>
       </svg>
