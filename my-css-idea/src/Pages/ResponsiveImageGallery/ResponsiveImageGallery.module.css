@@ -9,13 +9,14 @@
   margin-bottom: 12px;
   overflow: hidden;
   border-radius: 6px;
+  filter: blur(1px);
 }
 .grid_box > div:hover {
-  filter: opacity(0.8);
+  filter: blur(0px);
 }
 .grid_box > div > img {
   transform: scale(1.2);
-  transition: transform 200ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 .grid_box > div:hover > img {
   transform: scale(1);
