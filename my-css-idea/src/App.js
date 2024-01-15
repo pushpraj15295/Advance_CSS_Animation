@@ -17,6 +17,7 @@ import DragAndDrop from "./Pages/DragAndDrop/DragAndDrop";
 import { MultiDragAndDrop } from "./Pages/MultiDragAndDrop/MultiDragAndDrop";
 import { CrossBoxDragAndDrop } from "./Pages/CroseBoxDragAndDrop/CroseBoxDragAndDrop";
 import SvgAnimation from "./Pages/svgAnimation/svgAnimation";
+import ResponsiveImageGallery from "./Pages/ResponsiveImageGallery/ResponsiveImageGallery";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <RotatingCard />
       <RotatingCardOne />
       <FilterImage />
+      <ResponsiveImageGallery />
       <BackImageText />
       <BackVideoText />
       <CircleText />
