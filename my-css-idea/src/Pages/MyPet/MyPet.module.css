@@ -54,7 +54,6 @@
   top: -50%;
   box-shadow: inset 0 -15px 0 0 #eaebec;
   animation: dog_body 200ms ease-in-out infinite alternate;
-
   &:before {
     content: "";
     position: absolute;
@@ -69,29 +68,6 @@
     transform-origin: right bottom;
     animation: dog_tail_blur 200ms 200ms / 6 ease-in-out infinite alternate both;
   }
-
-  @keyframes dog_tail_blur {
-    0% {
-      transform: rotate(0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      transform: rotate(90deg);
-    }
-  }
-
-  @keyframes dog-body {
-    from {
-      transform: translatex(-10%);
-    }
-    to {
-      transform: translatex(10%);
-    }
-  }
 }
 
 /* dog-head */
@@ -100,36 +76,12 @@
   animation: dog_head 1.3s linear infinite;
 }
 
-@keyframes dog_head {
-  0% {
-    transform: rotate(45deg);
-  }
-  33% {
-    transform: rotate(-45deg);
-  }
-  66% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(45deg);
-  }
-}
-
 /* dog-torso */
 .dog_torso {
   top: -20%;
   background: white;
   box-shadow: inset 0 -15px 0 0 #eaebec;
   animation: dog_torso 200ms ease-in-out infinite alternate-reverse;
-
-  @keyframes dog_torso {
-    0% {
-      transform: translatex(-5%);
-    }
-    100% {
-      transform: tranlatex(5%);
-    }
-  }
 }
 
 /* dog-eyes */
@@ -258,14 +210,6 @@
   }
 }
 
-@keyframes dog_tongue_inner {
-  from {
-    transform: translatey(5%);
-  }
-  to {
-    transform: translatey(22%);
-  }
-}
 /* dog-tail */
 .dog_tail {
   width: 22px;
@@ -281,6 +225,68 @@
   }
 }
 
+.dog_body > .dog_tail {
+  bottom: 90%;
+}
+
+/* 🔑🔑🔑🔑🔑🔑🔑🔑 🔑🔑🔑🔑🔑🔑🔑🔑 🔑🔑🔑🔑🔑🔑🔑🔑 🔑🔑🔑🔑🔑🔑🔑🔑---- all key fremes */
+
+@keyframes dog_tail_blur {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes dog_body {
+  from {
+    transform: translatex(-10%);
+  }
+  to {
+    transform: translatex(10%);
+  }
+}
+
+@keyframes dog_head {
+  0% {
+    transform: rotate(45deg);
+  }
+  33% {
+    transform: rotate(-45deg);
+  }
+  66% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes dog_torso {
+  0% {
+    transform: translatex(-5%);
+  }
+  100% {
+    transform: tranlatex(5%);
+  }
+}
+
+@keyframes dog_tongue_inner {
+  from {
+    transform: translatey(5%);
+  }
+  to {
+    transform: translatey(22%);
+  }
+}
+
 @keyframes dog_tail-segment {
   0% {
     transform: rotate(-10deg);
@@ -288,8 +294,4 @@
   100% {
     transform: rotate(10deg);
   }
-}
-
-.dog_body > .dog_tail {
-  bottom: 90%;
 }
