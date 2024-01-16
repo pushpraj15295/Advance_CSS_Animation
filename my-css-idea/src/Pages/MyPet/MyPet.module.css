@@ -11,8 +11,8 @@
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   position: relative;
 }
@@ -22,21 +22,19 @@
   width: 100px;
   height: 100px;
   z-index: 1;
-
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.03);
-    transform: translatey(-30%) scale(1.5);
-  }
-
   * {
     position: absolute;
   }
+}
+.dog::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.03);
+  transform: translatey(-30%) scale(1.5);
 }
 
 .dog_body,
@@ -54,26 +52,27 @@
   top: -50%;
   box-shadow: inset 0 -15px 0 0 #eaebec;
   animation: dog_body 200ms ease-in-out infinite alternate;
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 90%;
-    right: 50%;
-    width: 90%;
-    height: 90%;
-    background: rgba(white, 0.4);
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 10%;
-    border-top-right-radius: 10%;
-    transform-origin: right bottom;
-    animation: dog_tail_blur 200ms 200ms / 6 ease-in-out infinite alternate both;
-  }
+}
+
+.dog_body::before {
+  content: "";
+  position: absolute;
+  bottom: 90%;
+  right: 50%;
+  width: 90%;
+  height: 90%;
+  background: rgba(white, 0.4);
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 10%;
+  border-top-right-radius: 10%;
+  transform-origin: right bottom;
+  animation: dog_tail_blur 200ms 200ms / 6 ease-in-out infinite alternate both;
 }
 
 /* dog-head */
 .dog_head {
   /* animation: dog_head 200ms * 9 cubic-bezier(0.11, 0.79, 0, 0.99) infinite; */
-  animation: dog_head 1.3s linear infinite;
+  animation: dog_head 1.6s infinite;
 }
 
 /* dog-torso */
@@ -133,33 +132,33 @@
   border-bottom-right-radius: 100%;
   bottom: -15%;
   background: white;
+}
 
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-  }
+.dog_muzzle::before,
+.dog_muzzle::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
 
-  &:before {
-    width: 6px;
-    height: 20px;
-    bottom: 0;
-    background: #eaebec;
-    left: calc(50% - 3px);
-  }
+.dog_muzzle::before {
+  width: 6px;
+  height: 20px;
+  bottom: 0;
+  background: #eaebec;
+  left: calc(50% - 3px);
+}
 
-  &:after {
-    background: black;
-    width: 20px;
-    height: 15px;
-    bottom: 12px;
-    left: calc(50% - 10px);
-    border-bottom-left-radius: 60% 60%;
-    border-bottom-right-radius: 60% 60%;
-    border-top-left-radius: 50% 40%;
-    border-top-right-radius: 50% 40%;
-  }
+.dog_muzzle::after {
+  background: black;
+  width: 20px;
+  height: 15px;
+  bottom: 12px;
+  left: calc(50% - 10px);
+  border-bottom-left-radius: 60% 60%;
+  border-bottom-right-radius: 60% 60%;
+  border-top-left-radius: 50% 40%;
+  border-top-right-radius: 50% 40%;
 }
 
 /* dog-ears */
@@ -173,21 +172,21 @@
   height: 50px;
   width: 50px;
   background: #eaebec;
+}
 
-  &:first-child {
-    right: 100%;
-    border-bottom-left-radius: 80%;
-    border-top-right-radius: 80%;
-    box-shadow: inset -15px 15px 0 1px white;
-    transform: rotate(10deg);
-  }
-  &:last-child {
-    left: 100%;
-    border-bottom-right-radius: 80%;
-    border-top-left-radius: 80%;
-    box-shadow: inset 15px 15px 0 0 white;
-    transform: rotate(-10deg);
-  }
+.dog_ear:first-child {
+  right: 100%;
+  border-bottom-left-radius: 80%;
+  border-top-right-radius: 80%;
+  box-shadow: inset -15px 15px 0 1px white;
+  transform: rotate(10deg);
+}
+.dog_ear:last-child {
+  left: 100%;
+  border-bottom-right-radius: 80%;
+  border-top-left-radius: 80%;
+  box-shadow: inset 15px 15px 0 0 white;
+  transform: rotate(-10deg);
 }
 
 .dog_tongue {
@@ -196,18 +195,17 @@
   left: calc(50% - 20px);
   z-index: -1;
   transform-origin: center top;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-    background: #fd3163;
-    animation: dog_tongue_inner 200ms / 2 ease-in-out infinite alternate;
-  }
+}
+.dog_tongue::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background: #fd3163;
+  animation: dog_tongue_inner 200ms / 2 ease-in-out infinite alternate;
 }
 
 /* dog-tail */
@@ -218,11 +216,8 @@
   bottom: 40%;
   border-radius: 22px / 2;
   left: calc(50% - (22px / 2));
-  transform-origin: center bottom;
-
-  .dog_tail {
-    animation: dog_tail-segment 200ms ease-in-out infinite alternate;
-  }
+  /* transform-origin: center bottom; */
+  animation: dog_tail-segment 200ms ease-in-out infinite alternate;
 }
 
 .dog_body > .dog_tail {
@@ -256,16 +251,19 @@
 
 @keyframes dog_head {
   0% {
-    transform: rotate(45deg);
+    transform: rotate(50deg);
   }
-  33% {
-    transform: rotate(-45deg);
+  25% {
+    transform: rotate(0deg);
   }
-  66% {
+  50% {
+    transform: rotate(-50deg);
+  }
+  75% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(45deg);
+    transform: rotate(50deg);
   }
 }
 
