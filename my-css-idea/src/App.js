@@ -18,10 +18,12 @@ import { MultiDragAndDrop } from "./Pages/MultiDragAndDrop/MultiDragAndDrop";
 import { CrossBoxDragAndDrop } from "./Pages/CroseBoxDragAndDrop/CroseBoxDragAndDrop";
 import SvgAnimation from "./Pages/svgAnimation/svgAnimation";
 import ResponsiveImageGallery from "./Pages/ResponsiveImageGallery/ResponsiveImageGallery";
+import MyPet from "./Pages/MyPet/MyPet";
 
 function App() {
   return (
     <div className="App">
+      <MyPet />
       <SvgAnimation />
       <DropdownAnimation />
       <DragAndDrop />
