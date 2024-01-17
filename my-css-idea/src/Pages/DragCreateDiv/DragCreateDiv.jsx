@@ -42,48 +42,63 @@ const DragCreateDiv = () => {
   };
 
   return (
-    <div
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      style={{ width: "100%", height: "100vh", position: "relative" }}
-    >
-      {draggedDivs.map((div) => (
-        <div
-          key={div.id}
-          style={{
-            width: `${div.width}px`,
-            height: `${div.height}px`,
-            position: "absolute",
-            left: `${div.startX}px`,
-            top: `${div.startY}px`,
-            border: "1px solid #000",
-          }}
-        />
-      ))}
+    <>
+      <h2
+        style={{
+          textAlign: "center",
+          color: "lightyellow",
+          border: "2px solid green",
+          backgroundColor: "lightgreen",
+        }}
+      >
+        Drag and Create Boxes
+      </h2>
 
-      
-      {dragState && (
-        <div
-          style={{
-            width: `${dragState.width}px`,
-            height: `${dragState.height}px`,
-            position: "absolute",
-            left: `${dragState.startX}px`,
-            top: `${dragState.startY}px`,
-            border: "1px solid #000",
-          }}
-        />
-      )}
-      {/* Additional content goes here */}
-    </div>
+      <div
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        style={{
+          width: "100%",
+          height: "100vh",
+          position: "relative",
+          border: "2px solid green",
+          backgroundColor: "lightgreen",
+        }}
+      >
+        {draggedDivs.map((div) => (
+          <div
+            key={div.id}
+            style={{
+              width: `${div.width}px`,
+              height: `${div.height}px`,
+              position: "absolute",
+              left: `${div.startX}px`,
+              top: `${div.startY}px`,
+              border: "1px solid #000",
+            }}
+          />
+        ))}
+
+        {dragState && (
+          <div
+            style={{
+              width: `${dragState.width}px`,
+              height: `${dragState.height}px`,
+              position: "absolute",
+              left: `${dragState.startX}px`,
+              top: `${dragState.startY}px`,
+              border: "1px solid #000",
+            }}
+          />
+        )}
+        {/* Additional content goes here */}
+      </div>
+    </>
   );
 };
 
 export default DragCreateDiv;
-
-
-
 
 // if we put at the top of this website --------------------------- >
 
