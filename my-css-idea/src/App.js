@@ -19,6 +19,7 @@ import { CrossBoxDragAndDrop } from "./Pages/CroseBoxDragAndDrop/CroseBoxDragAnd
 import SvgAnimation from "./Pages/svgAnimation/svgAnimation";
 import ResponsiveImageGallery from "./Pages/ResponsiveImageGallery/ResponsiveImageGallery";
 import MyPet from "./Pages/MyPet/MyPet";
+import DragCreateDiv from "./Pages/DragCreateDiv/DragCreateDiv";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       <CyclingGradient />
       <ResponsiveImageGallery />
       <Loader />
+      <DragCreateDiv />
     </div>
   );
 }

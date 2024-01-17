@@ -9,10 +9,10 @@
   box-sizing: border-box;
   cursor: url(../public/graph.png) 4 12, auto;
 }
-html,
+/* html,
 body {
   cursor: none !important;
-}
+} */
 html {
   font-size: 16px;
   font-family: "Figtree", sans-serif;
