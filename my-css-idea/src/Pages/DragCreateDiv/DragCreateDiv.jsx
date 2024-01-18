@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const DragCreateDiv = () => {
   const [isDragging, setIsDragging] = useState(false);
@@ -26,10 +26,10 @@ const DragCreateDiv = () => {
           style: {
             width: `${width}px`,
             height: `${height}px`,
-            position: 'absolute',
+            position: "absolute",
             left: `${startX}px`,
             top: `${startY}px`,
-            border: '1px solid #000',
+            border: "1px solid #000",
           },
         },
       ];
@@ -47,17 +47,35 @@ const DragCreateDiv = () => {
   };
 
   return (
-    <div
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      style={{ width: '100%', height: '100vh', position: 'relative' }}
-    >
-      {draggedDivs.map((div) => (
-        <div key={div.id} style={div.style} />
-      ))}
-      {/* Additional content goes here */}
-    </div>
+    <>
+      <h2
+        style={{
+          textAlign: "center",
+          color: "lightyellow",
+          border: "2px solid green",
+          backgroundColor: "lightgreen",
+        }}
+      >
+        Drag and Create Elements
+      </h2>
+      <div
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        style={{
+          width: "100%",
+          height: "100vh",
+          position: "relative",
+          border: "2px solid green",
+          backgroundColor: "lightgreen",
+        }}
+      >
+        {draggedDivs.map((div) => (
+          <div key={div.id} style={div.style} />
+        ))}
+        {/* Additional content goes here */}
+      </div>
+    </>
   );
 };
 
