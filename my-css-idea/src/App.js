@@ -19,6 +19,7 @@ import SvgAnimation from "./Pages/svgAnimation/svgAnimation";
 import ResponsiveImageGallery from "./Pages/ResponsiveImageGallery/ResponsiveImageGallery";
 import MyPet from "./Pages/MyPet/MyPet";
 import DragCreateDiv from "./Pages/DragCreateDiv/DragCreateDiv";
+import TailAnimation from "./Pages/TailAnimation/TailAnimation";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       <ResponsiveImageGallery />
       <Loader />
       <DragCreateDiv />
+      <TailAnimation />
     </div>
   );
 }
