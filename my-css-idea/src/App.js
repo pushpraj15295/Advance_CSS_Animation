@@ -25,9 +25,9 @@ function App() {
   return (
     <div className="App">
       <MyPet />
-      <SvgAnimation />
       <DropdownAnimation />
-      <DragAndDrop />
+      <SvgAnimation />
+      {/* <DragAndDrop /> */}
       <MultiDragAndDrop />
       <GhostText />
       <ImageShape />
@@ -42,8 +42,8 @@ function App() {
       <CyclingGradient />
       <ResponsiveImageGallery />
       <Loader />
-      <DragCreateDiv />
       <TailAnimation />
+      <DragCreateDiv />
     </div>
   );
 }
